@@ -1,0 +1,229 @@
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding: 100px 515px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(255, 255, 255, 0.197);
+    backdrop-filter: blur(3px);
+    // background: blur(5px);
+}
+.register {
+		// .register__modal
+
+		&__modal {
+            width: 480px;
+            height: 502px;
+            background: #FFFFFF;
+            box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.07);
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            // justify-content: space-around;
+		}
+
+		// .register__top
+
+		&__top {
+            width: 100%;
+            display: flex;
+            justify-content: right;
+		}
+
+		// .register__bottom
+
+		&__bottom > p{
+            margin-top: 8px;
+            width: 100%;
+            text-align: right;
+            @include font-style('Gilroy', normal, 400, 12px, 16px, #685ED6);
+		}
+
+		// .register__title
+
+		&__title {
+            text-align: center;
+            @include font-style('Gilroy', normal, 800, 32px, 32px, #685ED6);
+		}
+
+		// .register__inps
+
+        &__inps {
+            margin-top: 32px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+		&__inps > input {
+            padding: 8px 20px;
+            width: 340px;
+            height: 40px;
+            background: #F7F7FD;
+            border-radius: 4px;
+            @include font-style('Gilroy', normal, 400, 16px, 24px, #1D2530);
+		}
+		&__inps > input:hover {
+            border: 1px solid #E8E6F8;
+		}
+		&__inps > input:focus {
+            border: 1px solid #605DEC;
+		}
+
+		// .register__button
+
+		&__button {
+            margin-top: 32px;
+            width: 340px;
+            @include font-style('Gilroy', normal, 700, 18px, 24px, #FFFFFF);
+            padding: 12px 144px;
+            background: #685ED6;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+            border-radius: 6px;
+		}
+        &__button:active {
+            transform: translateY(3px);
+        }
+        &__button:hover {
+            background: #5043e4;
+        }
+}
+.bx {
+}
+.bx-x {
+    margin: 26px;
+    font-size: 60px;
+    cursor: pointer;
+    color: #685ED6;
+}
+.glass > img {
+    position: absolute;
+    right: 21.18px;
+}
+.glass {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.glass > input {
+    padding: 8px 20px;
+    width: 340px;
+    height: 40px;
+    background: #F7F7FD;
+    border-radius: 4px;
+    @include font-style('Gilroy', normal, 400, 16px, 24px, #1D2530);
+}
+.glass > input:hover {
+    border: 1px solid #E8E6F8;
+}
+.glass > input:focus {
+    border: 1px solid #605DEC;
+}
+
+// burger menu
+#burgerBtn {
+    display: none;
+}
+
+//mobile
+@media only screen and (max-width: 767px) {
+    // .burger__modal {
+    //     padding: 10% 18%;
+    // }
+    #burgerBtn {
+        display: block;
+    }
+}
+
+//tablet
+// @media only screen and (max-width: 1024px) {
+//     .modal {
+//         padding: 10% 18%;
+//     }
+// }
+
+.modal {
+    // margin: 50% auto;
+    // .modal__header
+
+    &__header {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding: 150px 72px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto; 
+        background-color: rgba(180, 179, 179, 0.197);
+        backdrop-filter: blur(3px);
+    }
+}
+.burger {
+
+    // .burger__modal
+
+    &__modal {
+        width: 237px;
+        height: 286px;
+        background: #FFFFFF;
+        box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.07);
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    // .burger__top
+
+    &__top {
+        width: 100%;
+        display: flex;
+        justify-content: right;
+    }
+
+    // .burger__vxod
+
+    &__vxod {
+        width: 177px;
+        padding: 10px;
+        background: #F1E4FF;
+        border-radius: 6px;
+        @include font-style('Gilroy', normal, 700, 16px, 20px, #685ED6);
+    }
+
+    &__bottom {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    &__register {
+        width: 177px;
+        padding: 10px;
+        background: #685ED6;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+        border-radius: 6px;
+        @include font-style('Gilroy', normal, 700, 16px, 20px, #FFFFFF);
+    }
+
+}
+.bx {
+}
+.bx-x {
+}
+#burger__close {
+    padding: 0px;
+    margin: 4px;
+    cursor: pointer;
+    font-size: 50px;
+}
+

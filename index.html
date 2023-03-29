@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Tocha</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container container">
+                <div class="header__logo">
+                    <a href="https://t.me/junior_developer">
+                        <img src="./images/logo-tocha.png" alt="Tocha logo">
+                    </a>
+                    <h1>tocha</h1>
+                </div>
+                <nav class="navbar">
+                    <div class="header__btn">
+
+                        <button class="btn__vxod" id="myVxod">Вход</button>
+                        <button class="btn__register" id="myRegister">Регистрация</button>
+
+                        <img id="burgerBtn" src="./images/Burger.svg" alt="menu">
+
+                        <div id="myHeader" class="modal__header">
+                            <div class="burger__modal">
+                                <div class="burger__top">
+                                    <i class='bx bx-x' id="burger__close"></i>
+                                </div>
+                                <div class="burger__bottom">
+                                    <button class="burger__vxod">Вход</button>
+                                    <button class="burger__register">Регистрация</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="myModal1" class="modal">
+
+                            <div class="register__modal">
+                                <div class="register__top">
+                                    <i class='bx bx-x close1'></i>
+                                </div>
+                                <div class="register__bottom">
+                                    <div class="register__title">Вход</div>
+                                    <div class="register__inps">
+                                        <input type="tel" placeholder="Телефон">
+                                        <div class="glass">
+                                            <input type="password" placeholder="Пароль">
+                                            <img src="./images/ko'z.svg" alt="glass">
+                                        </div>
+                                    </div>
+                                    <p>Напомнить пароль</p>
+                                    <button type="submit" class="register__button">Войти</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div id="myModal" class="modal">
+
+                            <!-- Modal content -->
+                            <div class="register__modal">
+                                <div class="register__top">
+                                    <i class='bx bx-x close'></i>
+                                </div>
+                                <div class="register__bottom">
+                                    <div class="register__title">Регистрация</div>
+                                    <div class="register__inps">
+                                        <input type="tel" placeholder="Телефон">
+                                        <input type="email" placeholder="Электронная почта">
+                                        <div class="glass">
+                                            <input type="password" placeholder="Пароль">
+                                            <img src="./images/ko'z.svg" alt="glass">
+                                        </div>
+                                        <div class="glass">
+                                            <input type="password" placeholder="Повторите пароль">
+                                            <img src="./images/ko'z.svg" alt="glass">
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="register__button">Войти</button>
+                                </div>
+                            </div>
+                          
+                        </div>   
+
+                    </div>
+                </nav>
+            </div>
+            <main class="main main__header">
+                <section class="tgsite">
+                    <div class="tgsite__container container">
+                        <div class="tgsite__left">
+                            <div class="tgsite__title">
+                                <h2 class="title__blue">Telegram чат</h2>
+                                <h2 class="title__black" style="color: #1D2530;">на вашем сайте</h2>
+                            </div>
+                            <div class="tgsite__text">
+                                Общение с клиентами станет простым <br>
+                                и удобным, а подключение займет 5 минут.
+                                Первый месяц — <b>бесплатно!</b>
+                            </div>
+                            <button class="tgsite__podkluchit">Подключить</button>
+                        </div>
+                        <div class="tgsite__right">
+                            <img src="./images/ilustration.svg" alt="photo">
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </header>
+        <main class="main">
+            <section class="online">
+                <div class="online__container container">
+                    <div class="online__left">
+                        <div class="online__title">Tocha Online — это</div>
+                        <div class="about__container">
+                            <div class="online__about">
+                                <div class="about__icon">
+                                    <img src="./images/telegram-icon.svg" alt="telegram icon">
+                                </div>
+                                <div>
+                                    <div class="about__title">Ничего лишнего</div>
+                                    <div class="about__text">Отсутствие лишних приложений для операторов. Оператору не нужно учиться работать с чатом</div>
+                                </div>
+                            </div>
+                            <div class="online__about">
+                                <div class="about__icon">
+                                    <img src="./images/home-icon.png" alt="home icon">
+                                </div>
+                                <div>
+                                    <div class="about__title">Простота</div>
+                                    <div class="about__text">Простая установка на сайт</div>
+                                </div>
+                            </div>
+                            <div class="online__about">
+                                <div class="about__icon">
+                                    <img src="./images/dollor-icon.png" alt="dollor icon">
+                                </div>
+                                <div>
+                                    <div class="about__title">Несколько ассистентов</div>
+                                    <div class="about__text">Возможность подключения нескольких ассистентов</div>
+                                </div>
+                            </div>
+                            <div class="online__about">
+                                <div class="about__icon">
+                                    <img src="./images/adu-icon.png" alt="edu icon">
+                                </div>
+                                <div>
+                                    <div class="about__title">Кастомизация</div>
+                                    <div class="about__text">Настройка интерфейса под нужды сайта</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="online__right">
+                        <img src="./images/iphone-chat.svg" alt="iphone chat">
+                    </div>
+                </div>
+            </section>
+            <section class="tarif">
+                <div class="tarif__container container">
+                    <div class="tarif__top">
+                        <div class="tarif__title">Тарифы</div>
+                        <div class="tarif__text">Стоимость зависит от трафика сайта</div>
+                    </div>
+                    <div class="tarif__bottom">
+                        <div class="bottom__cards">
+                            <div class="bottom__card">
+                                <div class="card__top">
+                                    <div class="card__name">Бесплатно</div>
+                                </div>
+                                <div class="card__bottom">
+                                    <div class="card__title">Пробный период <br> на 1 месяц</div>
+                                    <div class="card__text">0₽/первый месяц</div>
+                                    <button class="card__btn besplatno">Подключить за 0₽</button>
+                                </div>
+                            </div>
+                            <div class="bottom__card">
+                                <div class="card__top">
+                                    <div class="card__name">Базовый</div>
+                                </div>
+                                <div class="card__bottom">
+                                    <div class="card__title">Менее 1000 <br> посещений в сутки</div>
+                                    <div class="card__text">200₽/месяц</div>
+                                    <button class="card__btn bazaviy">Подключить за 200₽</button>
+                                </div>
+                            </div>
+                            <div class="bottom__card">
+                                <div class="card__top">
+                                    <div class="card__name">Премиум</div>
+                                </div>
+                                <div class="card__bottom">
+                                    <div class="card__title">Более 1000 <br>
+                                        посещений в сутки</div>
+                                    <div class="card__text">500₽/месяц</div>
+                                    <button class="card__btn premium">Подключить за 500₽</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="chat">
+                <div class="chat__container container">
+                    <div class="chat__title">Всего 3 шага для подключения Telegram чата</div>
+                    <div class="shag__container">
+                        <div class="chat__shag">
+                            <div class="shag__top">
+                                <div class="shag__number">1</div>
+                                <div class="shag__chata">
+                                    <div class="shag__name">Telegram bot</div>
+                                    <div class="shag__text shag__1">Вы создаёте Telegram бота для вашего сайта</div>
+                                </div>
+                            </div>
+                            <div class="shag__bottom">
+                                <img class="x" src="./images/X.svg" alt="iphoneX">
+                            </div>
+                        </div>
+                        <div class="chat__shag chat__2">
+                            <div class="shag__top">
+                                <div class="shag__number">2</div>
+                                <div class="shag__chata">
+                                    <div class="shag__name">Подключение Tocha</div>
+                                    <div class="shag__text shag__2">Tocha подключает Telegram бота к вашиму сайту</div>
+                                </div>
+                            </div>
+                            <div class="shag__bottom">
+                                <img class="x2" src="./images/x2.svg" alt="iphoneX">
+                            </div>
+                        </div>
+                        <div class="chat__shag">
+                            <div class="shag__top">
+                                <div class="shag__number">3</div>
+                                <div class="shag__chata">
+                                    <div class="shag__name">Telegram-чат</div>
+                                    <div class="shag__text shag__3">
+                                        Консультант отвечает на вопросы посетителей сайта
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="shag__bottom">
+                                <img class="x3" src="./images/X3.svg" alt="iphoneX">
+                            </div>
+                        </div>
+                        <img class="line1" src="./images/line1.svg" alt="line">
+                        <img class="line2" src="./images/tgicon.svg" alt="telegram icon">
+                        <img class="line3" src="./images/line3.svg" alt="line">
+                        <img class="line4" src="./images/line4.svg" alt="telegram-icon">
+                        <img class="line5" src="./images/line5.svg" alt="line">
+                        <img class="line6" src="./images/line6.svg" alt="line">
+                    </div>
+                </div>
+                <div class="chatfon"></div>
+            </section>
+            <section class="klient">
+                <div class="klient__container container">
+                    <div class="klient__title">Отзывы клиентов</div>
+                    <img class="klient__tirnoq" src="./images/tirnoq.svg" alt="qo'shtirnoq">
+                    <div class="klient__cards">
+                        <div class="klient__left">
+                            <div class="klient__card">
+                                <div class="c__title">Как же удобно!</div>
+                                <div class="c__text">В рамках спецификации современных стандартов, базовые сценарии поведения пользователей, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут преданы социально-демократической анафеме.</div>
+                                <i class='bx bx-play bx-rotate-90' ></i>
+                            </div>
+                            <div class="klient__foto">
+                                <img src="./images/klient1.svg" alt="klient">
+                                <div>
+                                    <div class="klient__name">Анна Купер</div>
+                                    <div class="klient__site">romashka.ru</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="klient__right">
+                            <div class="klient__card">
+                                <div class="c__title">Теперь мы идем в ногу со временем</div>
+                                <div class="c__text">А ещё интерактивные прототипы превращены в посмешище, хотя само их существование приносит несомненную пользу обществу. Банальные, но неопровержимые выводы, а также тщательные исследования конкурентов формируют сеть.</div>
+                                <i class='bx bx-play bx-rotate-90' ></i>
+                            </div>
+                            <div class="klient__foto">
+                                <img src="./images/klient2.svg" alt="klient">
+                                <div>
+                                    <div class="klient__name">Андрей Васильев</div>
+                                    <div class="klient__site">samogon-ont.ru</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="klient__left">
+                            <div class="klient__card">
+                                <div class="c__title">Как же удобно!</div>
+                                <div class="c__text">В рамках спецификации современных стандартов, базовые сценарии поведения пользователей, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут преданы социально-демократической анафеме.</div>
+                                <i class='bx bx-play bx-rotate-90' ></i>
+                            </div>
+                            <div class="klient__foto">
+                                <img src="./images/klient1.svg" alt="klient">
+                                <div>
+                                    <div class="klient__name">Анна Купер</div>
+                                    <div class="klient__site">romashka.ru</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="klient__right">
+                            <div class="klient__card">
+                                <div class="c__title">Теперь мы идем в ногу со временем</div>
+                                <div class="c__text">А ещё интерактивные прототипы превращены в посмешище, хотя само их существование приносит несомненную пользу обществу. Банальные, но неопровержимые выводы, а также тщательные исследования конкурентов формируют сеть.</div>
+                                <i class='bx bx-play bx-rotate-90' ></i>
+                            </div>
+                            <div class="klient__foto">
+                                <img src="./images/klient2.svg" alt="klient">
+                                <div>
+                                    <div class="klient__name">Андрей Васильев</div>
+                                    <div class="klient__site">samogon-ont.ru</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="klient__left">
+                            <div class="klient__card">
+                                <div class="c__title">Как же удобно!</div>
+                                <div class="c__text">В рамках спецификации современных стандартов, базовые сценарии поведения пользователей, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут преданы социально-демократической анафеме.</div>
+                                <i class='bx bx-play bx-rotate-90' ></i>
+                            </div>
+                            <div class="klient__foto">
+                                <img src="./images/klient1.svg" alt="klient">
+                                <div>
+                                    <div class="klient__name">Анна Купер</div>
+                                    <div class="klient__site">romashka.ru</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="klient__right">
+                            <div class="klient__card">
+                                <div class="c__title">Теперь мы идем в ногу со временем</div>
+                                <div class="c__text">А ещё интерактивные прототипы превращены в посмешище, хотя само их существование приносит несомненную пользу обществу. Банальные, но неопровержимые выводы, а также тщательные исследования конкурентов формируют сеть.</div>
+                                <i class='bx bx-play bx-rotate-90' ></i>
+                            </div>
+                            <div class="klient__foto">
+                                <img src="./images/klient2.svg" alt="klient">
+                                <div>
+                                    <div class="klient__name">Андрей Васильев</div>
+                                    <div class="klient__site">samogon-ont.ru</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="klient__left">
+                            <div class="klient__card">
+                                <div class="c__title">Как же удобно!</div>
+                                <div class="c__text">В рамках спецификации современных стандартов, базовые сценарии поведения пользователей, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут преданы социально-демократической анафеме.</div>
+                                <i class='bx bx-play bx-rotate-90' ></i>
+                            </div>
+                            <div class="klient__foto">
+                                <img src="./images/klient1.svg" alt="klient">
+                                <div>
+                                    <div class="klient__name">Анна Купер</div>
+                                    <div class="klient__site">romashka.ru</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="klient__right">
+                            <div class="klient__card">
+                                <div class="c__title">Теперь мы идем в ногу со временем</div>
+                                <div class="c__text">А ещё интерактивные прототипы превращены в посмешище, хотя само их существование приносит несомненную пользу обществу. Банальные, но неопровержимые выводы, а также тщательные исследования конкурентов формируют сеть.</div>
+                                <i class='bx bx-play bx-rotate-90' ></i>
+                            </div>
+                            <div class="klient__foto">
+                                <img src="./images/klient2.svg" alt="klient">
+                                <div>
+                                    <div class="klient__name">Андрей Васильев</div>
+                                    <div class="klient__site">samogon-ont.ru</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom__inp">
+                        <input class="inputs" type="radio" name="card">
+                        <input class="inputs" type="radio" name="card">
+                        <input class="inputs" type="radio" name="card">
+                    </div>
+                </div>
+            </section>
+            <section class="email">
+                <div class="email__container container">
+                    <img class="group" src="./images/Frame.svg" alt="Group">
+                    <div class="email__right">
+                        <div class="email__title">Подключите Telegram чат уже сегодня</div>
+                        <div class="email__div">
+                            <input type="email" class="email__input" placeholder="Введите e-mail">
+                            <button class="email__btn">Отправить</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container container">
+                <div class="footer__logo">
+                    <img src="./images/logo.svg" alt="tocha logo">
+                </div>
+                <div class="footer__right">
+                    <div class="footer__telegram">
+                        <div class="telegram__title">Telegram чат</div>
+                        <ul class="telegram__items">
+                            <li class="telegram__item">
+                                <a href="https://uzum.uz/uz/about/delivery-points">О нас</a>
+                            </li>
+                            <li class="telegram__item">
+                                <a href="https://uzum.uz/uz/about/careers">Партнеры</a>
+                            </li>
+                            <li class="telegram__item">
+                                <a href="https://uzum.uz/uz?utm_medium=cpc&utm_source=google&utm_campaign=uzum_uz%28tashknt%29_web%28desktop%29_srch%28brnd%29%7C%7Bgbid%7D_%7Bad_id%7D%7C18856195889&utm_term=kwd%7Cuzum%20market&gclid=CjwKCAjw_YShBhAiEiwAMomsEBEJqJsqs7nN-1QXBCzMBg8Ws1y6BA7NaOZ4CvZVnqcaqCFtN310URoCByAQAvD_BwE#contacts">Инструкция</a>
+                            </li>
+                            <li class="telegram__item">
+                                <a href="https://uzum.uz/uz/faq">Цены</a>
+                            </li>
+                            <li class="telegram__item">
+                                <a href="https://seller.uzum.uz/">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__podderjka">
+                        <div class="podderjka__title">Поддержка</div>
+                        <ul class="podderjka__items">
+                            <li class="podderjka__item">
+                                <a href="">Центр поддержки</a>
+                            </li>
+                            <li class="podderjka__item">
+                                <a href="">Политика <br> конфеденциальности</a>
+                            </li>
+                            <li class="podderjka__item">
+                                <a href="">Документы оферта</a>
+                            </li>
+                            <li class="podderjka__item">
+                                <a href="">Документы оферта</a>
+                            </li>
+                            <li class="podderjka__item">
+                                <a href="">Статус</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="container">
+                    <p>© 2021 Tocha. Все права защищены</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./js/register.js"></script>
+
+</body>
+</html>
